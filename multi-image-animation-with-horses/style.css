@@ -1,0 +1,13 @@
+body{
+    margin:0;
+    background-color: greenyellow;
+}
+
+/* the"#" let's us style 
+the element with a given ID
+*/
+#canvasContainer{
+  margin-left: 30 px;  
+  
+  
+}

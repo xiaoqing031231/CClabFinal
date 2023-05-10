@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    background-color:rgb(248, 202, 219);
+}
+
+/* the"#" let's us style 
+the element with a given ID
+*/
+#canvasContainer{
+  /* position:absolute */
+  margin-left: 14cm;
+  margin-top: 2cm;
+  
+  
+}
+
+h1{
+  position: absolute;
+
+  margin-left: 12cm;
+  margin-top: -1.7cm;
+  color: green;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:50px
+}
+
+h2{
+  position: absolute;
+
+  margin-left: 17cm;
+  margin-top: -1.7cm;
+  color: green;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:50px
+ 
+}
+
+h3{
+  position: absolute;
+
+  margin-left: 22cm;
+  margin-top: -1.7cm;
+  color: green;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:50px;
+}

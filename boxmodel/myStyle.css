@@ -1,0 +1,52 @@
+body{
+    /* margin:0px; */
+}
+h1{
+    font-family: sans-serif;
+    color: crimson;
+}
+
+.spaceHighLight{
+    background-color: burlywood;
+    font-size: 60px;
+    border-width: 1px;
+    border-style:dashed;
+    border-color:darkgreen
+}
+.myImage{
+    width: 260px;
+    border:2px black dashed
+}
+
+.imageBox{
+    border-width: 1px;
+    border-style: solid;
+    border-color:black;
+
+
+    padding: 15px;
+    margin: 10px;
+    margin-left: 80 px;
+
+
+    background-color: lavender;
+}
+
+.secondDiv{
+    background-color: chartreuse;
+    position:absolute;
+    top: 50px;
+    left:300px;
+}
+
+.thirdDiv{
+    position:fixed;
+    top:50px;
+    left:50px
+}
+
+.fourthDiv{
+ position: relative;
+ top:10px;
+ left:30px;
+}

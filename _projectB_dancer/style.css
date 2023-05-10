@@ -1,0 +1,58 @@
+body{
+    margin:0;
+    background-color: yellow;
+}
+
+/* the"#" let's us style 
+the element with a given ID
+*/
+#canvasContainer{
+  margin-left: 12cm;
+  margin-top: 1cm;
+}
+
+h1{
+  position: relative;
+  top: -10px;
+  margin-left: 600px;
+  font-size: 80px;
+  
+
+}
+
+p{
+  position: relative;
+  top: -20px;
+  margin-left: 650px;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+button {
+  position: relative;
+  top: -30px;
+  display: inline-block;
+  border: none;
+  
+/*   border-radius: 5px; */
+  font-size: 20px;
+  background: lightgreen;
+  box-shadow: 0px 5px 5px;
+  margin: 10px;
+  padding: px;
+}
+
+button:active{
+  box-shadow: 0px 4px 5px gray;
+}
+
+
+
+#buttons{
+  margin-left: 625px;
+}
+
+
+
+

@@ -1,0 +1,25 @@
+body{
+    margin:0;
+    background-color: rgb(41, 246, 99);
+}
+
+/* the"#" let's us style 
+the element with a given ID
+*/
+#canvasContainer{
+  margin-left: 11cm;
+  margin-top: 1cm;
+  
+}
+
+h1{
+  position: relative;
+
+  margin-left: 15cm;
+  margin-top: 1cm;
+  color: green;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 500;
+}
+
+
