@@ -1,16 +1,27 @@
 let dancers1 = [];
-let numOfDancers1 = 6;
+let dancers2 = [];
+let numOfDancers1 = 5;
+let numOfDancers2 = 5;
 let lightColor = (0);
 let lightMove = 0
 let angle = 200
+
+
 
 
 function setup(){
    let cnv =  createCanvas(600,600);
    cnv.parent("canvasContainer");
    
+   //song = loadSound('lib/music.mp3');
+   
+   
    for (let i = 0; i < numOfDancers1; i++) {
     dancers1.push(new Dancer1());
+  }
+
+  for (let i = 0; i < numOfDancers1; i++) {
+    dancers2.push(new Dancer2());
   }
 }
 
@@ -57,15 +68,22 @@ function draw(){
         dancers1[i].position();
         dancers1[i].display();
       }
-}
 
+      for (let i = 0; i < dancers2.length; i++) {
+        dancers2[i].update();
+        dancers2[i].position();
+        dancers2[i].display();
+      }  
+
+  
+   }
 
 
 
 class Dancer1{
     constructor() {
-    this.xPos1 = random(120, 480);
-    this.yPos1 = random(360, 420);
+    this.xPos1 = random(120, 280);
+    this.yPos1 = random(340, 380);
     this.angle = 40;
     this.rotationSpeed = random(-1,3);
   }
@@ -95,19 +113,20 @@ class Dancer1{
 
   display() {
 
+    
     // Draw body and head
     push();
     translate(this.xPos1, this.yPos1);
     stroke(0);
     fill(255,80);
-    line(0, 25, 0, 60);
+    line(0, 25, 0, 100);
     ellipse(0, 15, 20, 20);
 
     // Draw Arms
     push();
     translate(0, 30);
     rotate(radians(this.angle));
-    line(0, 0, 30, 0);
+    line(0, 0, 40, 0);
     // rotate(this.);
     // line(0, 0, 30, 0);
     pop();
@@ -115,19 +134,94 @@ class Dancer1{
     push();
     translate(0, 30);
     rotate(radians(-this.angle));
-    line(0, 0, 30, 0);
+    line(0, 0, 40, 0);
     // rotate(this.);
     // line(0, 0, 30, 0);
     pop();
 
     // Draw Legs
-    translate(0, 60);
+    translate(0, 100);
     rotate(radians(this.angle-20));
-    line(0, 0, 40, 0);
+    line(0, 0, 60, 0);
     rotate(radians(this.angle-10));
-    line(0, 0, 40, 0);
+    line(0, 0, 60, 0);
     
 
     pop();
   }
+}
+
+class Dancer2{
+  constructor() {
+  this.xPos2 = random(280, 480);
+  this.yPos2 = random(360, 420);
+  this.angle = 140;
+  this.rotationSpeed = random(-1,3);
+}
+
+update() {
+  this.xPos2 += random(-1, 1);
+  this.yPos2 += random(-1, 1);
+  this.angle += this.rotationSpeed
+}
+
+
+position() {
+  if (this.xPos2 >= width){
+    this.xPos2 = width - 1;
+  } 
+  if (this.xPos2 <= 0){
+    this.xPos2 = 1;
+  } 
+
+  if (this.yPos2 >= height){
+    this.yPos2 = height - 1;
+  } 
+  if (this.yPos2 <= 0){
+    this.yPos2 = 1;
+  } 
+}
+
+display() {
+
+  // Draw body and head
+  push();
+  translate(this.xPos2, this.yPos2);
+  stroke(0);
+  fill(255,80);
+
+ // push();
+  //translate(0,30);
+  //rotate(radians(this.angle));
+  line(0, 25, 0, 60);
+  ellipse(0, 15, 20, 20);
+ // pop();
+
+  // Draw Arms
+  push();
+  translate(0, 30);
+  rotate(radians(this.angle));
+  line(0, 0, 30, 0);
+  // rotate(this.);
+  // line(0, 0, 30, 0);
+  pop();
+
+  push();
+  translate(0, 30);
+  rotate(radians(-this.angle));
+  line(0, 0, 30, 0);
+  // rotate(this.);
+  // line(0, 0, 30, 0);
+  pop();
+
+  // Draw Legs
+  translate(0, 60);
+ // rotate(radians(this.angle-20));
+  line(0, 0, 40, 0);
+  rotate(radians(this.angle-10));
+  line(0, 0, 40, 0);
+  
+
+  pop();
+}
 }
