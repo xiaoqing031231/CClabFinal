@@ -22,4 +22,12 @@ h1{
   font-size: 500;
 }
 
+p1{
+  position: relative
+     left: 200px;
+}
 
+p2{
+    position:relative
+        left:200px;
+}
