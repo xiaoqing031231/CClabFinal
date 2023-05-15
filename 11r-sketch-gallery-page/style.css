@@ -1,34 +1,129 @@
+
 body{
-    margin:0;
-    background-color: rgb(41, 246, 99);
+  margin:0;
+  background-color: rgb(41, 246, 99);
 }
 
 /* the"#" let's us style 
 the element with a given ID
 */
 #canvasContainer{
-  margin-left: 11cm;
-  margin-top: 1cm;
-  
+margin-left: 11cm;
+margin-top: 1cm;
+
 }
 
 h1{
-  position: relative;
+position: relative;
 
-  margin-left: 15cm;
-  margin-top: 1cm;
-  color: green;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 500;
+margin-left: 15cm;
+margin-top: 1cm;
+color: green;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 1500;
 }
 
 p1{
-  position: relative
-     left: 20cm;
-    color:red
+position: relative;
+top:0.5cm;
+left:560px;
+font-size: 25px;
 }
 
 p2{
-    position:relative
-        margin-left:20cm;
+  position: relative;
+  top:1.5cm;
+  left:250px;
+  bottom: 2cm;
+  font-size: 25px;
+  color:red;
+}
+
+.imageBox1{
+  position: relative;
+  top:-15cm;
+  border-width: 2px;
+  border-style: solid;
+  border-color:black;
+  padding: 20px;
+  margin: 10px;
+  margin-left: 80 px;
+  width:350px;
+  background-color:rgb(224, 255, 47);
+}
+
+p3{
+  font-size:30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imageBox2{
+  position: relative;
+  top:-14.5cm;
+  border-width: 2px;
+  border-style: solid;
+  border-color:black;
+  padding: 20px;
+  margin: 10px;
+  margin-left: 80 px;
+  width:350px;
+  background-color:greenyellow;
+}
+
+p4{
+  font-size:30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.imageBox3{
+  position: relative;
+  top:-14.5cm;
+  border-width: 2px;
+  border-style: solid;
+  border-color:black;
+  padding: 20px;
+  margin: 10px;
+  margin-left: 80 px;
+  width:350px;
+  background-color:rgb(241, 255, 47);
+}
+
+p5{
+  font-size:30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fourthDiv{
+  position: relative;
+  left:1100px;
+  width:350px;
+  top:-23cm;
+  height:180px;
+}
+
+p6{
+  font-size:80px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:rgb(46, 248, 248)
+}
+
+p7{
+  font-size:80px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:rgb(142, 248, 213)
+}
+
+p8{
+  font-size:80px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:rgb(134, 242, 247);
+}
+
+.fifthDiv{
+  position: relative;
+  left:-1350px;
+  width:350px;
+  top:-17cm;
+  height:180px;
 }
